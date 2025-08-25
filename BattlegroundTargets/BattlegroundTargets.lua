@@ -689,8 +689,11 @@ local function Range_Display(state, GVAR_TargetButton, display, healerState)
 		GVAR_TargetButton.RangeTexture:SetAlpha(1)
 		GVAR_TargetButton.HealthBar:SetAlpha(1)
 		GVAR_TargetButton.ClassTexture:SetAlpha(1)
-		GVAR_TargetButton.ClassColorBackground:SetTexture(GVAR_TargetButton.colR5, GVAR_TargetButton.colG5, GVAR_TargetButton.colB5, 1)
-		GVAR_TargetButton.HealthBar:SetTexture(GVAR_TargetButton.colR, GVAR_TargetButton.colG, GVAR_TargetButton.colB, 1)
+		GVAR_TargetButton.ClassColorBackground:SetTexture("Interface\\AddOns\\BattlegroundTargets\\Textures\\Aluminium")
+		GVAR_TargetButton.ClassColorBackground:SetVertexColor(GVAR_TargetButton.colR5, GVAR_TargetButton.colG5, GVAR_TargetButton.colB5, 1)
+		GVAR_TargetButton.HealthBar:SetTexture("Interface\\AddOns\\BattlegroundTargets\\Textures\\Aluminium")
+		GVAR_TargetButton.HealthBar:SetVertexColor(GVAR_TargetButton.colR, GVAR_TargetButton.colG, GVAR_TargetButton.colB, 1)
+
 		if healerState then GVAR_TargetButton.HealersTexture:SetAlpha(1) end
 	else
 		if display == 1 then -- Default 100
@@ -708,8 +711,11 @@ local function Range_Display(state, GVAR_TargetButton, display, healerState)
 			GVAR_TargetButton.RangeTexture:SetAlpha(0)
 			GVAR_TargetButton.HealthBar:SetAlpha(1)
 			GVAR_TargetButton.ClassTexture:SetAlpha(1)
-			GVAR_TargetButton.ClassColorBackground:SetTexture(0.2, 0.2, 0.2, 1)
-			GVAR_TargetButton.HealthBar:SetTexture(0.4, 0.4, 0.4, 1)
+			GVAR_TargetButton.ClassColorBackground:SetTexture("Interface\\AddOns\\BattlegroundTargets\\Textures\\Aluminium")
+			GVAR_TargetButton.ClassColorBackground:SetVertexColor(0.2, 0.2, 0.2, 1)
+			GVAR_TargetButton.HealthBar:SetTexture("Interface\\AddOns\\BattlegroundTargets\\Textures\\Aluminium")
+			GVAR_TargetButton.HealthBar:SetVertexColor(0.4, 0.4, 0.4, 1)
+
 			if healerState then GVAR_TargetButton.HealersTexture:SetAlpha(1) end
 		elseif display == 3 then -- Default 50
 			GVAR_TargetButton.Background:SetAlpha(0.50)
@@ -726,8 +732,11 @@ local function Range_Display(state, GVAR_TargetButton, display, healerState)
 			GVAR_TargetButton.RangeTexture:SetAlpha(0)
 			GVAR_TargetButton.HealthBar:SetAlpha(0.50)
 			GVAR_TargetButton.ClassTexture:SetAlpha(0.50)
-			GVAR_TargetButton.ClassColorBackground:SetTexture(0.2, 0.2, 0.2, 1)
-			GVAR_TargetButton.HealthBar:SetTexture(0.4, 0.4, 0.4, 1)
+			GVAR_TargetButton.ClassColorBackground:SetTexture("Interface\\AddOns\\BattlegroundTargets\\Textures\\Aluminium")
+			GVAR_TargetButton.ClassColorBackground:SetVertexColor(0.2, 0.2, 0.2, 1)
+			GVAR_TargetButton.HealthBar:SetTexture("Interface\\AddOns\\BattlegroundTargets\\Textures\\Aluminium")
+			GVAR_TargetButton.HealthBar:SetVertexColor(0.4, 0.4, 0.4, 1)
+
 			if healerState then GVAR_TargetButton.HealersTexture:SetAlpha(0.50) end
 		elseif display == 5 then -- Default 25
 			GVAR_TargetButton.Background:SetAlpha(0.25)
@@ -744,8 +753,11 @@ local function Range_Display(state, GVAR_TargetButton, display, healerState)
 			GVAR_TargetButton.RangeTexture:SetAlpha(0)
 			GVAR_TargetButton.HealthBar:SetAlpha(0.25)
 			GVAR_TargetButton.ClassTexture:SetAlpha(0.25)
-			GVAR_TargetButton.ClassColorBackground:SetTexture(0.2, 0.2, 0.2, 1)
-			GVAR_TargetButton.HealthBar:SetTexture(0.4, 0.4, 0.4, 1)
+			GVAR_TargetButton.ClassColorBackground:SetTexture("Interface\\AddOns\\BattlegroundTargets\\Textures\\Aluminium")
+			GVAR_TargetButton.ClassColorBackground:SetVertexColor(0.2, 0.2, 0.2, 1)
+			GVAR_TargetButton.HealthBar:SetTexture("Interface\\AddOns\\BattlegroundTargets\\Textures\\Aluminium")
+			GVAR_TargetButton.HealthBar:SetVertexColor(0.4, 0.4, 0.4, 1)
+
 			if healerState then GVAR_TargetButton.HealersTexture:SetAlpha(0.25) end
 		elseif display == 7 then -- Default 10
 			GVAR_TargetButton.Background:SetAlpha(0.10)
@@ -762,8 +774,10 @@ local function Range_Display(state, GVAR_TargetButton, display, healerState)
 			GVAR_TargetButton.RangeTexture:SetAlpha(0)
 			GVAR_TargetButton.HealthBar:SetAlpha(0.10)
 			GVAR_TargetButton.ClassTexture:SetAlpha(0.10)
-			GVAR_TargetButton.ClassColorBackground:SetTexture(0.2, 0.2, 0.2, 1)
-			GVAR_TargetButton.HealthBar:SetTexture(0.4, 0.4, 0.4, 1)
+			GVAR_TargetButton.ClassColorBackground:SetTexture("Interface\\AddOns\\BattlegroundTargets\\Textures\\Aluminium")
+			GVAR_TargetButton.ClassColorBackground:SetVertexColor(0.2, 0.2, 0.2, 1)
+			GVAR_TargetButton.HealthBar:SetTexture("Interface\\AddOns\\BattlegroundTargets\\Textures\\Aluminium")
+			GVAR_TargetButton.HealthBar:SetVertexColor(0.4, 0.4, 0.4, 1)
 			if healerState then GVAR_TargetButton.HealersTexture:SetAlpha(0.10) end
  		elseif display == 9 then -- X 100 m
 			GVAR_TargetButton.Background:SetAlpha(1)
@@ -772,8 +786,10 @@ local function Range_Display(state, GVAR_TargetButton, display, healerState)
 			GVAR_TargetButton.RangeTexture:SetAlpha(0)
 			GVAR_TargetButton.HealthBar:SetAlpha(1)
 			GVAR_TargetButton.ClassTexture:SetAlpha(1)
-			GVAR_TargetButton.ClassColorBackground:SetTexture(0.2, 0.2, 0.2, 1)
-			GVAR_TargetButton.HealthBar:SetTexture(0.4, 0.4, 0.4, 1)
+			GVAR_TargetButton.ClassColorBackground:SetTexture("Interface\\AddOns\\BattlegroundTargets\\Textures\\Aluminium")
+			GVAR_TargetButton.ClassColorBackground:SetVertexColor(0.2, 0.2, 0.2, 1)
+			GVAR_TargetButton.HealthBar:SetTexture("Interface\\AddOns\\BattlegroundTargets\\Textures\\Aluminium")
+			GVAR_TargetButton.HealthBar:SetVertexColor(0.4, 0.4, 0.4, 1)
 			if healerState then GVAR_TargetButton.HealersTexture:SetAlpha(1) end
 		elseif display == 10 then -- X 50
 			GVAR_TargetButton.Background:SetAlpha(0.50)
@@ -790,8 +806,10 @@ local function Range_Display(state, GVAR_TargetButton, display, healerState)
 			GVAR_TargetButton.RangeTexture:SetAlpha(0)
 			GVAR_TargetButton.HealthBar:SetAlpha(0.50)
 			GVAR_TargetButton.ClassTexture:SetAlpha(0.50)
-			GVAR_TargetButton.ClassColorBackground:SetTexture(0.2, 0.2, 0.2, 1)
-			GVAR_TargetButton.HealthBar:SetTexture(0.4, 0.4, 0.4, 1)
+			GVAR_TargetButton.ClassColorBackground:SetTexture("Interface\\AddOns\\BattlegroundTargets\\Textures\\Aluminium")
+			GVAR_TargetButton.ClassColorBackground:SetVertexColor(0.2, 0.2, 0.2, 1)
+			GVAR_TargetButton.HealthBar:SetTexture("Interface\\AddOns\\BattlegroundTargets\\Textures\\Aluminium")
+			GVAR_TargetButton.HealthBar:SetVertexColor(0.4, 0.4, 0.4, 1)
 			if healerState then GVAR_TargetButton.HealersTexture:SetAlpha(0.50) end
 		elseif display == 12 then -- X 25
 			GVAR_TargetButton.Background:SetAlpha(0.25)
@@ -808,8 +826,10 @@ local function Range_Display(state, GVAR_TargetButton, display, healerState)
 			GVAR_TargetButton.RangeTexture:SetAlpha(0)
 			GVAR_TargetButton.HealthBar:SetAlpha(0.25)
 			GVAR_TargetButton.ClassTexture:SetAlpha(0.25)
-			GVAR_TargetButton.ClassColorBackground:SetTexture(0.2, 0.2, 0.2, 1)
-			GVAR_TargetButton.HealthBar:SetTexture(0.4, 0.4, 0.4, 1)
+			GVAR_TargetButton.ClassColorBackground:SetTexture("Interface\\AddOns\\BattlegroundTargets\\Textures\\Aluminium")
+			GVAR_TargetButton.ClassColorBackground:SetVertexColor(0.2, 0.2, 0.2, 1)
+			GVAR_TargetButton.HealthBar:SetTexture("Interface\\AddOns\\BattlegroundTargets\\Textures\\Aluminium")
+			GVAR_TargetButton.HealthBar:SetVertexColor(0.4, 0.4, 0.4, 1)
 			if healerState then GVAR_TargetButton.HealersTexture:SetAlpha(0.25) end
 		elseif display == 14 then -- X 10
 			GVAR_TargetButton.Background:SetAlpha(0.10)
@@ -826,8 +846,10 @@ local function Range_Display(state, GVAR_TargetButton, display, healerState)
 			GVAR_TargetButton.RangeTexture:SetAlpha(0)
 			GVAR_TargetButton.HealthBar:SetAlpha(0.10)
 			GVAR_TargetButton.ClassTexture:SetAlpha(0.10)
-			GVAR_TargetButton.ClassColorBackground:SetTexture(0.2, 0.2, 0.2, 1)
-			GVAR_TargetButton.HealthBar:SetTexture(0.4, 0.4, 0.4, 1)
+			GVAR_TargetButton.ClassColorBackground:SetTexture("Interface\\AddOns\\BattlegroundTargets\\Textures\\Aluminium")
+			GVAR_TargetButton.ClassColorBackground:SetVertexColor(0.2, 0.2, 0.2, 1)
+			GVAR_TargetButton.HealthBar:SetTexture("Interface\\AddOns\\BattlegroundTargets\\Textures\\Aluminium")
+			GVAR_TargetButton.HealthBar:SetVertexColor(0.4, 0.4, 0.4, 1)
 			if healerState then GVAR_TargetButton.HealersTexture:SetAlpha(0.10) end
 		end
 	end
@@ -2079,13 +2101,15 @@ function BattlegroundTargets:CreateFrames()
 		GVAR_TargetButton.ClassColorBackground:SetWidth((buttonWidth - 2) - (buttonHeight - 2) - (buttonHeight - 2));
 		GVAR_TargetButton.ClassColorBackground:SetHeight(buttonHeight - 2);
 		GVAR_TargetButton.ClassColorBackground:SetPoint("LEFT", GVAR_TargetButton.ClassTexture, "RIGHT", 0, 0);
-		GVAR_TargetButton.ClassColorBackground:SetTexture(0, 0, 0, 0);
+		GVAR_TargetButton.ClassColorBackground:SetTexture("Interface\\AddOns\\BattlegroundTargets\\Textures\\Aluminium")
+		GVAR_TargetButton.ClassColorBackground:SetVertexColor(0, 0, 0, 0);
 		
 		GVAR_TargetButton.HealthBar = GVAR_TargetButton:CreateTexture(nil, "ARTWORK");
 		GVAR_TargetButton.HealthBar:SetWidth((buttonWidth - 2) - (buttonHeight - 2) - (buttonHeight - 2));
 		GVAR_TargetButton.HealthBar:SetHeight(buttonHeight - 2);
 		GVAR_TargetButton.HealthBar:SetPoint("LEFT", GVAR_TargetButton.ClassColorBackground, "LEFT", 0, 0);
-		GVAR_TargetButton.HealthBar:SetTexture(0, 0, 0, 0);
+		GVAR_TargetButton.HealthBar:SetTexture("Interface\\AddOns\\BattlegroundTargets\\Textures\\Aluminium")
+		GVAR_TargetButton.HealthBar:SetVertexColor(0, 0, 0, 0);
 		
 		GVAR_TargetButton.HealthTextButton = CreateFrame("Button", nil, GVAR_TargetButton);
 		GVAR_TargetButton.HealthText = GVAR_TargetButton.HealthTextButton:CreateFontString(nil, "OVERLAY", "GameFontNormal");
@@ -4673,7 +4697,8 @@ function BattlegroundTargets:ClearConfigButtonValues(GVAR_TargetButton, clearRan
 	GVAR_TargetButton.LeaderTexture:SetAlpha(0);
 	GVAR_TargetButton.HealersTexture:SetTexture(0, 0, 0, 0);
 	
-	GVAR_TargetButton.HealthBar:SetTexture(0, 0, 0, 0);
+	GVAR_TargetButton.HealthBar:SetTexture("Interface\\AddOns\\BattlegroundTargets\\Textures\\Aluminium")
+	GVAR_TargetButton.HealthBar:SetVertexColor(0, 0, 0, 0);
 	GVAR_TargetButton.HealthBar:SetWidth(healthBarWidth);
 	GVAR_TargetButton.HealthText:SetText("");
 	
@@ -4681,7 +4706,8 @@ function BattlegroundTargets:ClearConfigButtonValues(GVAR_TargetButton, clearRan
 	
 	GVAR_TargetButton.Name:SetText("");
 	GVAR_TargetButton.ClassTexture:SetTexCoord(0, 0, 0, 0);
-	GVAR_TargetButton.ClassColorBackground:SetTexture(0, 0, 0, 0);
+	GVAR_TargetButton.ClassColorBackground:SetTexture("Interface\\AddOns\\BattlegroundTargets\\Textures\\Aluminium")
+	GVAR_TargetButton.ClassColorBackground:SetVertexColor(0, 0, 0, 0);
 	local healerState = OPT.ButtonShowHealer[currentSize] and true;
 
 	if clearRange then
@@ -5016,8 +5042,10 @@ function BattlegroundTargets:MainDataUpdate()
 			GVAR_TargetButton.colR5 = colR*0.5;
 			GVAR_TargetButton.colG5 = colG*0.5;
 			GVAR_TargetButton.colB5 = colB*0.5;
-			GVAR_TargetButton.ClassColorBackground:SetTexture(GVAR_TargetButton.colR5, GVAR_TargetButton.colG5, GVAR_TargetButton.colB5, 1);
-			GVAR_TargetButton.HealthBar:SetTexture(colR, colG, colB, 1);
+			GVAR_TargetButton.ClassColorBackground:SetTexture("Interface\\AddOns\\BattlegroundTargets\\Textures\\Aluminium");
+			GVAR_TargetButton.ClassColorBackground:SetVertexColor(GVAR_TargetButton.colR5, GVAR_TargetButton.colG5, GVAR_TargetButton.colB5, 1);
+			GVAR_TargetButton.HealthBar:SetTexture("Interface\\AddOns\\BattlegroundTargets\\Textures\\Aluminium");
+			GVAR_TargetButton.HealthBar:SetVertexColor(GVAR_TargetButton.colR, GVAR_TargetButton.colG, GVAR_TargetButton.colB, 1);
 			
 			local onlyname = qname;
 			if(ButtonShowFlag or ButtonHideRealm) then
@@ -6810,3 +6838,4 @@ BattlegroundTargets:RegisterEvent("PLAYER_LOGIN")
 BattlegroundTargets:RegisterEvent("PLAYER_ENTERING_WORLD")
 --BattlegroundTargets:RegisterEvent("CHAT_MSG_RAID_BOSS_EMOTE")
 BattlegroundTargets:SetScript("OnEvent", OnEvent)
+
